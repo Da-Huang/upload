@@ -1,0 +1,27 @@
+# This is a upload, by da.huang
+
+Alias /upload /home/da.huang/up
+<Directory /home/da.huang/up>
+  Options ExecCGI +FollowSymLinks +SymLinksIfOwnerMatch
+  AllowOverride All
+  order allow,deny
+  Allow from all
+  AddHandler cgi-script .py
+  DirectoryIndex upload.py
+</Directory>
+
+<VirtualHost *:80>
+#  ServerName git.206.hulu.com
+  ServerAlias 10.20.0.206
+  DocumentRoot /home/da.huang/up
+#  ProxyPreserveHost On
+#  ProxyRequests Off
+#  ProxyPass / http://localhost:801/
+#  ProxyPassReverse / http://localhost:801/
+</VirtualHost>
+
+#Listen *:801
+#<VirtualHost *:801>
+#  ServerName gitserver
+#  DocumentRoot /usr/share/gitweb
+#</VirtualHost>
