@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 CURRENT_PATH=`realpath $0 | xargs dirname`
-
 REAL_USER=`echo ~ | xargs basename`
 
 sed -i "s/{USER}/$REAL_USER/g" conf/exchange.conf upload.py
