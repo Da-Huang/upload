@@ -4,7 +4,7 @@ CURRENT_PATH=`realpath $0 | xargs dirname`
 
 #sudo apt-get install apache2 libapache2-mod-python
 
-sed -i "s/{USER}/$USER/g"
+sed -i "s/{USER}/$USER/g" conf/exchange.conf upload.py
 
 sudo rm /etc/apache2/sites-available/exchange.conf
 sudo rm /etc/apache2/sites-available/upload.conf
