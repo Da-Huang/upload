@@ -4,6 +4,7 @@
 
 .upload-form {
   margin:20px;
+  overflow:auto;
 }
 
 .upload-form>div {
@@ -12,6 +13,10 @@
 
 .file-info {
   margin:20px;
+}
+
+.file-info-item {
+  font-weight:bold;
 }
 
 .template {
