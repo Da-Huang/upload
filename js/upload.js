@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $('.inputfile').change(function(e) {
+    /*
+  $('.inputfile-base').change(function(e) {
     var filenames = '';
     console.log(this);
     console.log(e);
@@ -10,4 +11,5 @@ $(document).ready(function() {
       spantext.text('Choose a file...');
     }
   });
+  */
 });

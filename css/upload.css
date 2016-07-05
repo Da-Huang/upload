@@ -1,9 +1,16 @@
-.center {
-  text-align:center;
+.title {
   margin:20px;
 }
 
-.inputfile + label {
+.upload-form {
+  margin:20px;
+}
+
+.upload-form div {
+  float:left;
+}
+
+.inputfile-base+label {
   max-width:80%;
   font-size:1.25rem;
   /* 20px */
@@ -17,12 +24,7 @@
   /* 10px 20px */
 }
 
-.inputfile + label * {
-  /* pointer-events:none; */
-  /* in case of FastClick lib use */
-}
-
-.inputfile + label svg {
+.inputfile-base+label svg {
   width:1em;
   height:1em;
   vertical-align:middle;
@@ -33,14 +35,20 @@
   /* 4px */
 }
 
-
-/* style 1 */
-
-.inputfile-1 + label {
+.choose-file+label {
   color:#f1e5e6;
   background-color:#d3394c;
 }
 
-.inputfile-1 + label:hover {
+.choose-file+label:hover {
   background-color:#722040;
+}
+
+.upload-file+label {
+  color:#f1e5e6;
+  background-color:#4285f4;
+}
+
+.upload-file+label:hover {
+  background-color:#003366;
 }
