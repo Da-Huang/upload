@@ -17,7 +17,7 @@ def download(item):
 
 print 'Content-Type: text/html\n\n'
 form = cgi.FieldStorage()
-files = form['files']
+files = form['file']
 
 if isinstance(files, list):
   for item in files: print download(item) + '<br/>'

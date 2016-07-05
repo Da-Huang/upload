@@ -6,8 +6,16 @@
   margin:20px;
 }
 
-.upload-form div {
+.upload-form>div {
   float:left;
+}
+
+.file-info {
+  margin:20px;
+}
+
+.template {
+  display:none;
 }
 
 .inputfile-base+label {
