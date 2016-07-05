@@ -17,6 +17,6 @@ sudo ln -s /usr/share/upload/conf/exchange.conf /etc/apache2/sites-available
 sudo rm -f /etc/apache2/sites-available/upload.conf
 sudo ln -s /usr/share/upload/conf/upload.conf /etc/apache2/sites-available
 
-sudo a2ensite exchange upload
+sudo a2ensite -q exchange upload
 sudo a2enmod cgid
 sudo service apache2 restart
