@@ -7,7 +7,7 @@ cgitb.enable()
 import cgi, os
 def download(item):
   name = os.path.basename(item.filename)
-  path = os.path.join('/home/dhuang/Exchange', name)
+  path = os.path.join('/home/sewm/Exchange', name)
   if os.path.exists(path): return 'fail for %s, caused by name conflicts' % name
   out = open(path, 'w')
   out.write(item.file.read())
