@@ -4,7 +4,7 @@ CURRENT_PATH=`realpath $0 | xargs dirname`
 REAL_USER=`echo ~ | xargs basename`
 
 sed -i "s/{USER}/$REAL_USER/g" conf/exchange.conf upload.py
-mkdir ~/Exchange
+mkdir -p ~/Exchange
 sudo chmod 777 ~/Exchange
 
 sudo apt-get install apache2 libapache2-mod-python
