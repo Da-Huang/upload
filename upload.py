@@ -8,7 +8,7 @@ import cgi, os
 
 def Download(item):
   name = os.path.basename(item.filename)
-  path = os.path.join('/home/{USER}/Exchange', name)
+  path = os.path.join('/home/sewm/Exchange', name)
   if os.path.exists(path):
     return 'Fail for %s, caused by name conflicts' % name
   with open(path, 'w') as out:
